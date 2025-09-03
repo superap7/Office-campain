@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Shipping Company Office Information Form</title>
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      background: #f2f6fa;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header img {
+      max-height: 60px;
+      margin-bottom: 10px;
+    }
+    .header h2 {
+      margin: 0;
+      color: #003366;
+    }
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, label, textarea, select {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #003366;
+    }
+    input[type="submit"] {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <!-- Optional: Place your shipping company logo here -->
+  <h2>Shipping Company Office Information Form</h2>
+  <p>Please provide the requested company details below.</p>
+</div>
+
+<form action="https://formspree.io/f/mzzvkzyg" method="POST">
+  <label for="company_name">Company Name:</label>
+  <input id="company_name" name="company_name" required type="text"/>
+
+  <label for="office_address">Office Address:</label>
+  <textarea id="office_address" name="office_address" required rows="3"></textarea>
+
+  <label for="country">Country of Registration:</label>
+  <input id="country" name="country" required type="text"/>
+
+  <label for="fleet_size">Fleet Size (Number of Vessels Managed):</label>
+  <input id="fleet_size" name="fleet_size" type="number" min="0"/>
+
+  <label for="contact_person">Contact Person (Full Name):</label>
+  <input id="contact_person" name="contact_person" required type="text"/>
+
+  <label for="position">Position in Company:</label>
+  <input id="position" name="position" required type="text"/>
+
+  <label for="contact_email">Contact Email:</label>
+  <input id="contact_email" name="contact_email" required type="email"/>
+
+  <label for="contact_phone">Contact Phone:</label>
+  <input id="contact_phone" name="contact_phone" type="tel"/>
+
+  <input type="submit" value="Submit Information"/>
+</form>
+
+</body>
+</html>
